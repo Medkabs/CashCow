@@ -37,61 +37,7 @@ const ChartArea = () => {
    };
 
    return (
-      <div id="chart" className="chart-area pt-140">
-         <div className="container">
-            <div className="chart-inner-wrap">
-               <div className="row align-items-center">
-                  <div className="col-lg-6">
-                     <div className="chart-wrap">
-                        <div className="chart">
-                           <div id="doughnutChart">
-                              {chartData[activeTab] && <Doughnut data={data} />}
-                           </div>
-                        </div>
-                        <div className="chart-tab">
-                           <ul className="nav nav-tabs" id="myTab" role="tablist">
-                              {tab_title.map((tab, index) => (
-                                 <li key={index} className="nav-item">
-                                    <button onClick={() => handleTabClick(index)}
-                                       className={activeTab === index ? 'nav-link active' : ' nav-link'}>{tab}
-                                    </button>
-                                 </li>
-                              ))}
-                           </ul>
-                           <div className="tab-content" id="myTabContent">
-                              <div className={`tab-pane fade ${activeTab === 0 ? 'show active' : ''}`} id="description">
-                                 <div className="chart-list">
-                                    <ul className="list-wrap">
-                                       {chart_List_1.map((list, index) => (<li key={index}>{list}</li>))}
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div className={`tab-pane fade ${activeTab === 1 ? 'show active' : ''}`} id="description">
-                                 <div className="chart-list">
-                                    <ul className="list-wrap">
-                                       {chart_List_2.map((list, i) => (<li key={i}>{list}</li>))}
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="col-lg-6">
-                     <div className="right-side-content">
-                        <Image src={chartImg} alt="" />
-                        <p>Ethereum is a decentralized, open-source <br /> blockchain with smart contract</p>
-                        <ul className="list-wrap">
-                           <li><span>1</span>Symbol: CIC</li>
-                           <li><span>2</span>Initial Value : 1 ETH = 3177.38 CIC</li>
-                           <li><span>3</span>Type : ERC20</li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
    )
 }
 
