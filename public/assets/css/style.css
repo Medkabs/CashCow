@@ -78,8 +78,9 @@
   margin: -250px -500px;
 }
 .alltuchtopdown {
-  width: 270px; /* Adjust as needed */
+  width: 280px; /* Adjust as needed */
   height: auto; /* Maintain aspect ratio */
+  margin: 0px 0 -130px;
 }
 
 @media (max-width: 768px) {
