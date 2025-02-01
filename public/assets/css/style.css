@@ -72,6 +72,19 @@
 /*=============================
 	01. Variable CSS
 ===============================*/
+
+.alltuchtopdown {
+  width: 270px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .alltuchtopdown {
+    width: 150px; /* Smaller width for mobile screens */
+  }
+}
+
+
 :root {
     --tg-body-font-family: 'Outfit', sans-serif;
     --tg-heading-font-family: 'Plus Jakarta Sans', sans-serif;
