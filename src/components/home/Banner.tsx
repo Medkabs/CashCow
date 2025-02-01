@@ -4,7 +4,7 @@ import CountdownClock from "@/ui/CountDownClock";
 // import Image from "next/image"
 import Link from "next/link"
 
-// import hero_thumb from "@/assets/img/update/hero/hero-1-1.jpg"
+import hero_thumb from "@/assets/img/images/hero-image.png"
 // import CountdownClock from "@/ui/CountDownClock"
 // import bannerShape_1 from "@/assets/img/banner/banner_shape01.png";
 // import bannerShape_2 from "@/assets/img/banner/banner_shape02.png";
@@ -26,8 +26,8 @@ const Banner = () => {
             <div className="hero-style1">
                <div className="row flex-row-reverse">
                   <div className="col-lg-3">
-                     <div className="hero-thumb alltuchtopdown">
-                        {/* <Image src={hero_thumb} alt="img" /> */}
+                     <div className="hero-thumb alltuchtopdown" id = "heroimage">
+                        <Image src={hero_thumb} alt="img" />
                      </div>
                   </div>
                   <div className="col-lg-9">

@@ -72,7 +72,11 @@
 /*=============================
 	01. Variable CSS
 ===============================*/
-
+#heroimage{
+  width: 1320px; 
+  height: auto; 
+  margin: -250px -500px;
+}
 .alltuchtopdown {
   width: 270px; /* Adjust as needed */
   height: auto; /* Maintain aspect ratio */
