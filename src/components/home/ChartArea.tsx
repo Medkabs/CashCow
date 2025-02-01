@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
 import Image from 'next/image';
-
+import intro_thumb from '@/assets/img/logo/intro_1-1.png';
 import chartImg from "@/assets/img/images/chart_img.png"
 
 const tab_title: string[] = ["Funding Allocation", "Token Distribution",];
@@ -20,19 +20,28 @@ interface DataType {
 const intro_data: DataType[] = [
    {
       id: 1,
-      title: "Who We Are",
-      desc: (<>Cash Cow, a flagship product of Flip It Mutual LLC, is a revolutionary ecosystem designed to empower and inspire entrepreneurs by leveraging the synergy of blockchain technology, artificial intelligence, and community collaboration. With its unique combination of playful branding and powerful utility, Cash Cow offers a transformative experience for individuals who want to turn their ideas into reality while benefiting from the equity growth of an innovative token-driven platform.
-         At its core, Cash Cow blends the charm of a crypto meme token with real-world applications, creating a vibrant and engaged community of visionaries, innovators, and creators. By joining Cash Cow, members gain access to cutting-edge tools, valuable resources, and exclusive opportunities designed to foster entrepreneurial success.</>),
+      title: "Mission Statement:",
+      desc: (<>
+         Cash Cow’s mission is to fuel entrepreneurial ambition and innovation by providing access to
+         advanced AI tools, fostering a collaborative community, and creating a token-driven ecosystem
+         where mutual success thrives.</>),
+   },
+   {
+      id: 2,
+      title: "Vision:",
+      desc: (<>
+         To establish Cash Cow as the leading platform for entrepreneurs seeking inspiration, practical
+         strategies, and access to exclusive opportunities, while building a global community that
+         rewards creativity and collaboration.</>),
    },
    // {
-   //    id: 2,
-   //    title: "Wealth?",
-   //    desc: (<>Users with Iko have lower system fees Price growth is gathered by demand for Unifox technologies. You own a stake in an international corporation. You are part of the community</>),
-   // },
-   // {
    //    id: 3,
-   //    title: "True Riches?",
-   //    desc: (<>The underlying growth attracts investors The whole community is interested in growing the Iko prize. The company is planning to continue to expand the project, and it will cost the top up</>),
+   //    title: "Why Choose Cash Cow?",
+   //    desc: (<>Cash Cow is more than a cryptocurrency or a platform—it’s a movement. It’s a transformative
+   //       ecosystem that redefines how entrepreneurs access resources, connect with like-minded
+   //       individuals, and create meaningful change in their industries. Holding the Cash Cow token isn’t
+   //       just an investment; it’s an opportunity to participate in a dynamic community where fun meets
+   //       functionality, and creativity meets opportunity.</>),
    // },
 ]
 
@@ -77,30 +86,19 @@ const ChartArea = () => {
             </div>
             <div className="col-xl-6">
                <div className="intro-thumb1 alltuchtopdown">
-                  {/* <Image src={intro_thumb} alt="img" /> */}
+                  <Image src={intro_thumb} alt="img" />
                </div>
                <div className="intro-wrap mt-50">
                   <h6 className="intro-wrap-title">Our Mission & Vission</h6>
-                  <p className="intro-wrap-text">Mission:
-                  Cash Cow’s mission is to fuel entrepreneurial 
-                  ambition and innovation by providing access to advanced AI tools, fostering a 
-                  collaborative community, and creating a token-driven ecosystem where mutual 
-                  success thrives.
-</p>
-                  <p className="intro-wrap-text mt-40">Vision:
-                     To establish Cash Cow as the leading platform for entrepreneurs seeking inspiration,
-                      practical strategies, and access to exclusive opportunities, while building a global 
-                      community that rewards creativity and collaboration.</p>
-                  </div>
-               <div className="intro-wrap mt-50">
-                  <h6 className="intro-wrap-title">The Cash Cow Movement</h6>
-                  <p className="intro-wrap-text">By choosing Cash Cow, you’re not just joining a platform, you’re embracing a movement. 
-                      This is your opportunity to turn ambition into achievement, dreams into strategy, 
-                      and ideas into success. Whether you’re a seasoned entrepreneur or just starting your journey,
-                       Cash Cow provides the tools, community, and support you need to thrive in the digital age.
-                      With Cash Cow, the possibilities are endless. Be part of the herd. Grow with Cash Cow.</p> 
-              
-                  </div>
+                  <p className="intro-wrap-text">Cash Cow is more than a cryptocurrency or a platform—it’s a movement. It’s a transformative
+ecosystem that redefines how entrepreneurs access resources, connect with like-minded
+individuals, and create meaningful change in their industries.</p>
+                  <p className="intro-wrap-text mt-40">Holding the Cash Cow token isn’t
+just an investment; it’s an opportunity to participate in a dynamic community where fun meets
+functionality, and creativity meets opportunity.</p>
+
+                  
+               </div>
             </div>
          </div>
       </div>

@@ -37,7 +37,7 @@ const feature_data: DataType[] = [
 const FeatureTwo = () => {
    return (
       <section className="features-area-two features-bg" style={{ backgroundImage: `url(/assets/img/bg/features_bg.png)` }}>
-         <div className="container">
+         {/* <div className="container">
             <div className="features-inner-wrap">
                <div className="features-item-wrap">
                   <div className="row justify-content-center">
@@ -72,7 +72,7 @@ const FeatureTwo = () => {
          <div className="features-shape-wrap">
             <Image src={featuresShape_1} alt="" className="alltuchtopdown" />
             <Image src={featuresShape_2} alt="" className="leftToRight" />
-         </div>
+         </div> */}
       </section>
    )
 }
