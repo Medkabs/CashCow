@@ -31,7 +31,7 @@ const Banner = () => {
                      </div>
                   </div>
                   <div className="col-lg-9">
-                     <h1 className="hero-title">Putting Your Money in Product Backed Projects</h1>
+                     <h1 className="hero-title">Cash Cow ($COW) <br />The Deflationary Meme Coin with Real Utility </h1>
                      <div className="btn-wrap">
                         <Link href="/contact" className="btn btn2" >
                            Purchase a Token

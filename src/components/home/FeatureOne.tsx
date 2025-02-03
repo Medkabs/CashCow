@@ -46,7 +46,11 @@ const FeatureOne = () => {
             <div className="row justify-content-center">
                <div className="col-lg-10">
                   <div className="section-title text-center mb-70">
-                     <h2 className="title">Revolutionary ICO Platform with Exclusive Rewards Program</h2>
+                     <h2 className="title">A Smarter Meme Coin Model. <br/>More Than Just a Token </h2>
+                     <p> 
+                        While meme coins have taken the crypto world by storm, many lack real backing or use cases.
+                        Cash Cow is different. It embraces the fun and viral nature of meme culture while integrating 
+                        real-world economic principles that drive continuous growth.</p>
                   </div>
                </div>
             </div>
