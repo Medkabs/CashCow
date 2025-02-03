@@ -15,26 +15,27 @@ interface DataType {
 const feature_data: DataType[] = [
    {
       id: 1,
-      title: (<>Mobile Payment Make Easy</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
+      title: (<>Real World Value Through Token Equity</>),
+      desc: (<>AUnlike traditional meme tokens, the Cash Cow token is built on a foundation of real-world value. Membership fees and the growth of the community are directly reinvested into the token’s equity, creating a continually expanding ecosystem where every token holder benefits. As the platform grows, so does the value of the Cash Cow token, giving members both utility and financial opportunity.</>),
       img: featureImg_1,
    },
    {
       id: 2,
-      title: (<>Lifetime Free Transaction</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
+      title: (<>Platform Built for Mutual Success</>),
+      desc: (<>At the heart of Cash Cow is the principle of shared growth. The platform thrives as its members thrive, creating a virtuous cycle of mutual success. Token holders enjoy exclusive perks such as early access to platform updates, premium features, and the ability to shape the future of the ecosystem through governance features.</>),
       img: featureImg_2,
    },
    {
       id: 3,
-      title: (<>Protect the <br /> Identity</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
+      title: (<>Exclusive Access  <br /> to the Cash Cow List</>),
+      desc: (<>The Cash Cow List is your gateway to recognition and opportunity. This exclusive, curated list showcases the most promising entrepreneurial ideas within the community, connecting members to funding opportunities, partnerships, and other resources that can elevate their ventures. Whether you’re looking to gain visibility, attract investors, or collaborate with other members, the Cash Cow List is your platform to shine.</>),
       img: featureImg_3,
    },
    {
       id: 4,
-      title: (<>Security & Control Over Money</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
+      title: (<>A Thriving Community of Innovators
+         </>),
+      desc: (<>Cash Cow thrives on collaboration and connection. By joining the ecosystem, you’re becoming part of a global network of ambitious entrepreneurs, investors, and thought leaders. This community provides unparalleled opportunities to share ideas, gain insights, and form partnerships with like-minded individuals who are equally invested in collective success.</>),
       img: featureImg_4
    },
 ]
