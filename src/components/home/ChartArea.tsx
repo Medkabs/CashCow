@@ -78,7 +78,7 @@ const ChartArea = () => {
             </div>
             <div className="col-xl-6">
                <div className="intro-thumb1 alltuchtopdown">
-                  <Image src="/assets/img/images/coin.png" alt="CoinImage" itemID='coin' width={500} height={500} id="coin"/>
+                  {/* <Image src="/assets/img/images/coin.png" alt="CoinImage" itemID='coin' width={500} height={500} id="coin"/> */}
                </div>
                <div className="intro-wrap mt-50">
                   <h6 className="intro-wrap-title">The Cash Cow Movement</h6>
