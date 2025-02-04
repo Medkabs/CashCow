@@ -58,11 +58,12 @@ const FeatureTwo = () => {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="section-title section-title-two text-center">
-                        <h2 className="title">The World&apos;s 1st ICO Platform That Offers Rewards
+                        <h2 className="title">
                            <Image src={featuresTitleImg_1} alt="" />
-                           is a groundbreaking platform that revolutionizes the way
+                           This isn’t just a short-term hype 
                            <Image src={featuresTitleImg_2} alt="" />
-                           Initial Coin Offerings are conducted</h2>
+                           We are  building a token and brand that stands the test of time.</h2>
+                           
                      </div>
                   </div>
                </div>
