@@ -11,34 +11,37 @@ interface DataTyfe {
 const roadmap_data: DataTyfe[] = [
    {
       id: 1,
-      roadmap_title: "End of Q4 2023",
-      title: "Research",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "02/2025",
+      title: "Announcement",
+      desc: (<>The announcement of one of the most prolific coins in the 2020s ERA and the pioneer of a hybrid utility meme coin in the AI ERA</>),
    },
    {
       id: 2,
-      roadmap_title: "App Beta Test",
-      title: "Research",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "Preorder",
+      title: "Prelaunch",
+      desc: (<>The Pre Order is Launching and will be live on Minimal Distributors</>),
    },
    {
       id: 3,
-      roadmap_title: "End of Q4 2023",
-      title: "Token Test",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "02/17/2025",
+      title: "News Letter",
+      desc: (<>EXTRA EXTRA READ ALL ABOUT IT!
+         We will be announcing our Partnerships through our Trusty News Letter !!!!</>),
    },
    {
       id: 4,
-      roadmap_title: "End of Q4 2023",
-      title: "Alpha Test",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "???????",
+      title: "LAUNCH",
+      desc: (<>
+         We will Launch on all our platforms and be fully open on the SOLANA BLOCKCHAIN
+         UTILITY COIN COMING SOON</>),
    },
-   {
-      id: 5,
-      roadmap_title: "End of Q4 2023",
-      title: "Concept",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
-   },
+   // {
+   //    id: 5,
+   //    roadmap_title: "End of Q4 2023",
+   //    title: "Concept",
+   //    desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+   // },
 ]
 
 const settings = {
