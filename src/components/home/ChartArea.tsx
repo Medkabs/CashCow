@@ -67,15 +67,17 @@ const ChartArea = () => {
    return (
       <div className="pt-130 overflow-hidden bg-black2">
       <div className="container">
-         <div className="row">
+         <div className="row"> 
             <div className="col-xl-6">
                <div className="section-title mb-45">
                   <h2 className="title style2">Introducing Cash Cow</h2>
-                  <p className="sec-text">True wealth in the world of virtual currencies</p>
+                  <p className="sec-text">Cash Cow ($COW) – Where Memes Meet Smart Tokenomics.
+
+</p>
                </div>
             </div>
          </div>
-         <div className="row justify-content-between">
+         <div className="row justify-content-between" style={{ width: '83.5rem' }}>
             <div className="col-xl-4">
                {intro_data.map((item) => (
                   <div key={item.id} className="intro-wrap">
@@ -85,14 +87,14 @@ const ChartArea = () => {
                ))}
             </div>
             <div className="col-xl-6">
-               <div className="intro-thumb1 alltuchtopdown">
+               <div className="intro-thumb1 alltuchtopdown" style={{ marginLeft: '118px' }}>
                   <Image src={intro_thumb} alt="img" />
                </div>
-               <div className="intro-wrap mt-50">
+               <div className="intro-wrap mt-50" style={{ marginTop: '168px', width: '33.5rem' }}>
                   <h6 className="intro-wrap-title">Our Mission & Vission</h6>
                   <p className="intro-wrap-text">Cash Cow is more than a cryptocurrency or a platform—it’s a movement. It’s a transformative
 ecosystem that redefines how entrepreneurs access resources, connect with like-minded
-individuals, and create meaningful change in their industries.</p>
+individuals, and create meaningful change in their industres.</p>
                   <p className="intro-wrap-text mt-40">Holding the Cash Cow token isn’t
 just an investment; it’s an opportunity to participate in a dynamic community where fun meets
 functionality, and creativity meets opportunity.</p>

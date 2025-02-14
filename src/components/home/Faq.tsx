@@ -32,7 +32,7 @@ const FAQ = () => {
                      {faq_data.filter((items) => items.page === "home_1").map((item) => (
                         <div key={item.id} className="accordion-card active">
                            <div className="accordion-header" id={`collapse-item-${item.id}`}>
-                              <button className={`accordion-button ${item.id === 1 ? "" : "collapsed"}`} type="button" data-bs-toggle="collapse" data-bs-target={`#collapse-${item.id}`} aria-expanded="true" aria-controls={`collapse-${item.id}`}><span className="number">{item.id}</span>{item.title}</button>
+                              <button className={`accordion-button ${item.id === 0 ? "" : "collapsed"}`} type="button" data-bs-toggle="collapse" data-bs-target={`#collapse-${item.id}`} aria-expanded="true" aria-controls={`collapse-${item.id}`}><span className="number">{item.id}</span>{item.title}</button>
                            </div>
                            <div id={`collapse-${item.id}`} className={`accordion-collapse collapse ${item.id === 1 ? "show" : ""}`} aria-labelledby={`collapse-item-${item.id}`} data-bs-parent="#faqAccordion">
                               <div className="accordion-body">

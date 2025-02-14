@@ -75,7 +75,7 @@ const Footer = () => {
                   <div className="row">
                      <div className="col-lg-12">
                         <div className="copyright-text">
-                           <p>Copyright © 2023 XECO. All rights reserved.</p>
+                           <p>Powered by Particles.Ai 2025</p>
                         </div>
                      </div>
                   </div>

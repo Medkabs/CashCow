@@ -12,7 +12,7 @@ const LogingArea = ({ style }: any) => {
       <section className="eg-login__area pt-140 pb-140 p-relative z-index-1 fix">
          <div className="container">
             <div className="row justify-content-center">
-               <div className="col-xl-6 col-lg-8">
+               <div className="col-xl-6 col-lg-8"> 
                   <div className="eg-login__wrapper">
                      {style ? (
                         <div className="eg-login__top text-center mb-30">
