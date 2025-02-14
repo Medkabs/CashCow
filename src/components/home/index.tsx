@@ -7,7 +7,7 @@ import FAQ from "./Faq";
 import FeatureOne from "./FeatureOne";
 import FeatureTwo from "./FeatureTwo";
 import RoadMapArea from "./RoadMapArea";
-import Team from "./Team";
+// import Team from "./Team";
 
 const Home = () => {
    return (
@@ -19,7 +19,7 @@ const Home = () => {
          <FeatureTwo />
          <ChartArea />
          <RoadMapArea />
-         <Team />
+         {/* <Team /> */}
          <FAQ />
          <DownloadArea />
       </>

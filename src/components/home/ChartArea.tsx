@@ -10,6 +10,33 @@ const tab_title: string[] = ["Funding Allocation", "Token Distribution",];
 const chart_List_1: string[] = ["Contingency: 70%", "Business Development: 20%", "Investor: 30%", "Poland: 15%", "Legal & Regulation: 20%", "Czech Republic: 50%"]
 const chart_List_2: string[] = ["Czech Republic: 50%", "Poland: 15%", "Legal & Regulation: 20%", "Contingency: 70%", "Business Development: 20%", "Investor: 30%"]
 
+
+interface DataType {
+   id: number;
+   title: string;
+   desc: JSX.Element;
+}[];
+
+const intro_data: DataType[] = [
+   {
+      id: 1,
+      title: "Who We Are",
+      desc: (<>Cash Cow, Flip It Mutual LLC's flagship product, is an innovative ecosystem that empowers entrepreneurs through blockchain, AI, and community collaboration. Combining playful branding with real utility, it helps turn ideas into reality while offering equity growth in a token-driven platform. Cash Cow merges the appeal of a meme token with real-world applications, fostering a vibrant community of visionaries. Members gain access to cutting-edge tools, resources, and exclusive opportunities for entrepreneurial success.</>),
+   },
+   {
+      id: 2,
+      title: "Our Mission",
+      desc: (<>Cash Cow’s mission is to fuel entrepreneurial ambition and innovation by providing access to advanced AI tools, fostering a collaborative community, and creating a token-driven ecosystem where mutual success thrives.</>),
+   },
+   {
+      id: 3,
+      title: "Our Vision",
+      desc: (<>To establish Cash Cow as the leading platform for entrepreneurs seeking inspiration, practical strategies, and access to exclusive opportunities, while building a global community that rewards creativity and collaboration.</>),
+   },
+]
+
+
+
 const ChartArea = () => {
 
    const [activeTab, setActiveTab] = useState(0);
@@ -24,74 +51,54 @@ const ChartArea = () => {
       [70, 20, 30, 15, 20, 50], // Funding Allocation percentages
       [50, 15, 20, 70, 20, 30]  // Token Distribution percentages
    ];
+   
 
-   const data = {
-      // labels: ["Contingency", "Business Development", "Investor", "Poland", "Legal & Regulation", "Czech Republic"],
-      datasets: [
-         {
-            label: 'Founding Allocation',
-            data: chartData[activeTab],
-            backgroundColor: ["#44A08D", "#136F84", "#0B446D", "#033356", "#012641", "#191F28"]
-         }
-      ],
-   };
 
    return (
-      <div id="chart" className="chart-area pt-140">
-         <div className="container">
-            <div className="chart-inner-wrap">
-               <div className="row align-items-center">
-                  <div className="col-lg-6">
-                     <div className="chart-wrap">
-                        <div className="chart">
-                           <div id="doughnutChart">
-                              {chartData[activeTab] && <Doughnut data={data} />}
-                           </div>
-                        </div>
-                        <div className="chart-tab">
-                           <ul className="nav nav-tabs" id="myTab" role="tablist">
-                              {tab_title.map((tab, index) => (
-                                 <li key={index} className="nav-item">
-                                    <button onClick={() => handleTabClick(index)}
-                                       className={activeTab === index ? 'nav-link active' : ' nav-link'}>{tab}
-                                    </button>
-                                 </li>
-                              ))}
-                           </ul>
-                           <div className="tab-content" id="myTabContent">
-                              <div className={`tab-pane fade ${activeTab === 0 ? 'show active' : ''}`} id="description">
-                                 <div className="chart-list">
-                                    <ul className="list-wrap">
-                                       {chart_List_1.map((list, index) => (<li key={index}>{list}</li>))}
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div className={`tab-pane fade ${activeTab === 1 ? 'show active' : ''}`} id="description">
-                                 <div className="chart-list">
-                                    <ul className="list-wrap">
-                                       {chart_List_2.map((list, i) => (<li key={i}>{list}</li>))}
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="col-lg-6">
-                     <div className="right-side-content">
-                        <Image src={chartImg} alt="" />
-                        <p>Ethereum is a decentralized, open-source <br /> blockchain with smart contract</p>
-                        <ul className="list-wrap">
-                           <li><span>1</span>Symbol: CIC</li>
-                           <li><span>2</span>Initial Value : 1 ETH = 3177.38 CIC</li>
-                           <li><span>3</span>Type : ERC20</li>
-                        </ul>
-                     </div>
-                  </div>
+      <div className="pt-130 overflow-hidden bg-black2">
+      <div className="container">
+         <div className="row"> 
+            <div className="col-xl-6">
+               <div className="section-title mb-45">
+                  <h2 className="title style2">Introducing Cash Cow</h2>
+                  <p className="sec-text">Cash Cow ($COW) – Where Memes Meet Smart Tokenomics.
+
+</p>
                </div>
             </div>
          </div>
+         <div className="row justify-content-between">
+            <div className="col-xl-4">
+               {intro_data.map((item) => (
+                  <div key={item.id} className="intro-wrap">
+                     <h6 className="intro-wrap-title">{item.title}</h6>
+                     <p className="intro-wrap-text">{item.desc}</p>
+                  </div>
+               ))}
+            </div>
+            <div className="col-xl-6">
+               <div className="intro-thumb1 alltuchtopdown">
+                  {/* <Image src="/assets/img/images/coin.png" alt="CoinImage" itemID='coin' width={500} height={500} id="coin"/> */}
+               </div>
+               <div className="intro-wrap mt-50">
+                  <h6 className="intro-wrap-title">The Cash Cow Movement</h6>
+                  <p className="intro-wrap-text">Join the Herd:
+                  By choosing Cash Cow, you’re not just joining a platform, you’re embracing a movement. 
+                      This is your opportunity to turn ambition into achievement, dreams into strategy, 
+                      and ideas into success. Whether you’re a seasoned entrepreneur or just starting your journey,
+                       Cash Cow provides the tools, community, and support you need to thrive in the digital age.
+                      With Cash Cow, the possibilities are endless. Be part of the herd. Grow with Cash Cow.
+</p>
+                  {/* <p className="intro-wrap-text mt-40">Vision:
+                     To establish Cash Cow as the leading platform for entrepreneurs seeking inspiration,
+                      practical strategies, and access to exclusive opportunities, while building a global 
+                      community that rewards creativity and collaboration.</p> */}
+                  </div>
+            
+            </div>
+         </div>
       </div>
+   </div>
    )
 }
 

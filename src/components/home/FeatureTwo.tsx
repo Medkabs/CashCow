@@ -19,17 +19,17 @@ interface DataType {
 const feature_data: DataType[] = [
    {
       id: 1,
-      title: "Lifetime free and transaction",
+      title: "Scarcity",
       img: featuresImg_1
    },
    {
       id: 2,
-      title: "Security & Control over money",
+      title: "Stability",
       img: featuresImg_2
    },
    {
       id: 3,
-      title: "Mobile Payment Make Easy",
+      title: "Sustainability",
       img: featuresImg_3
    }
 ]
@@ -58,11 +58,12 @@ const FeatureTwo = () => {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="section-title section-title-two text-center">
-                        <h2 className="title">The World&apos;s 1st ICO Platform That Offers Rewards
+                        <h2 className="title">
                            <Image src={featuresTitleImg_1} alt="" />
-                           is a groundbreaking platform that revolutionizes the way
+                           This isn’t just a short-term hype 
                            <Image src={featuresTitleImg_2} alt="" />
-                           Initial Coin Offerings are conducted</h2>
+                           We are  building a token and brand that stands the test of time.</h2>
+                           
                      </div>
                   </div>
                </div>
