@@ -18,15 +18,15 @@ const DocumentArea = () => {
                      </div>
                   </div>
                </div>
-               <div className="row">
+               <div className="mx-auto row justify-content-center">
                   <div className="col-lg-8">
                      <div className="document-form-wrap">
                         <h4 className="title">Get In Touch Now</h4>
                         <DocumentForm />
                      </div>
                   </div>
-                  <div className="col-lg-4">
-                     <div className="document-wrap">
+                  {/* <div className="col-lg-4"> */}
+                     {/* <div className="document-wrap">
                         <h4 className="title">Read Documents</h4>
                         <ul className="list-wrap">
                            {doc_data.map((list, i) => (
@@ -39,14 +39,14 @@ const DocumentArea = () => {
                            ))}
                         </ul>
                         <Link href="#" className="btn">Download All</Link>
-                     </div>
-                  </div>
+                     </div> */}
+                  {/* </div> */}
                </div>
             </div>
          </div>
-         <div className="document-shape">
+         {/* <div className="document-shape">
             <Image src={docShape} alt="" className="alltuchtopdown" />
-         </div>
+         </div> */}
       </section>
    )
 }

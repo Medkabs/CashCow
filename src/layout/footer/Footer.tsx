@@ -40,9 +40,9 @@ const footer_data: DataType[] = [
 const Footer = () => {
    return (
       <footer>
-         <div className="footer-area footer-bg" style={{ backgroundImage: `url(/assets/img/bg/footer_bg.png)` }}>
+         <div className="banner-area banner-bg" style={{ backgroundImage: `url(/assets/img/bg/footer_bg.png)`, height:'32rem' }}>
             <div className="container">
-               <div className="footer-top">
+               {/* <div className="footer-top"> */}
                   <div className="row">
                      {footer_data.map((item) => (
                         <div key={item.id} className={item.class_name}>
@@ -75,7 +75,7 @@ const Footer = () => {
                   <div className="row">
                      <div className="col-lg-12">
                         <div className="copyright-text">
-                           <p>Copyright © 2023 XECO. All rights reserved.</p>
+                           <p>Powered by Particles.Ai 2025</p>
                         </div>
                      </div>
                   </div>
@@ -85,7 +85,7 @@ const Footer = () => {
                <Image src={footerShape_1} alt="" className="alltuchtopdown" />
                <Image src={footerShape_2} alt="" className="leftToRight" />
             </div>
-         </div>
+         {/* </div> */}
       </footer>
    )
 }

@@ -22,12 +22,6 @@ const contact_data: DataType[] = [
       info: (<><Link href="tel:0123456789">+88(0) 555-0108</Link> <br /> <Link href="tel:0123456789">+88(0) 555-01117</Link></>),
    },
    {
-      id: 3,
-      icon: "fas fa-envelope",
-      title: "Email",
-      info: (<><Link href="mailto:xeco.@example.com">sara.cruz@example.com</Link> <br /> <Link href="mailto:xeco.@example.com">xeco.@example.com</Link></>),
-   },
-   {
       id: 4,
       icon: "fas fa-business-time",
       title: "Visit Between",
@@ -57,7 +51,7 @@ const ContactArea = () => {
                </div>
             </div>
             
-            <div className="contact-form-wrap">
+            {/* <div className="contact-form-wrap">
                <div className="row g-0">
                   <div className="col-57 order-0 order-lg-2">
                      <div className="contact-form">
@@ -72,7 +66,7 @@ const ContactArea = () => {
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
          </div>
       </section>
    )

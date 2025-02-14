@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
 import Image from 'next/image';
-
+import intro_thumb from '@/assets/img/logo/intro_1-1.png';
 import chartImg from "@/assets/img/images/chart_img.png"
 
 const tab_title: string[] = ["Funding Allocation", "Token Distribution",];
@@ -20,19 +20,29 @@ interface DataType {
 const intro_data: DataType[] = [
    {
       id: 1,
-      title: "Who We Are",
-      desc: (<>Cash Cow, Flip It Mutual LLC's flagship product, is an innovative ecosystem that empowers entrepreneurs through blockchain, AI, and community collaboration. Combining playful branding with real utility, it helps turn ideas into reality while offering equity growth in a token-driven platform. Cash Cow merges the appeal of a meme token with real-world applications, fostering a vibrant community of visionaries. Members gain access to cutting-edge tools, resources, and exclusive opportunities for entrepreneurial success.</>),
+      title: "Mission Statement:",
+      desc: (<>
+         Cash Cow’s mission is to fuel entrepreneurial ambition and innovation by providing access to
+         advanced AI tools, fostering a collaborative community, and creating a token-driven ecosystem
+         where mutual success thrives.</>),
    },
    {
       id: 2,
-      title: "Our Mission",
-      desc: (<>Cash Cow’s mission is to fuel entrepreneurial ambition and innovation by providing access to advanced AI tools, fostering a collaborative community, and creating a token-driven ecosystem where mutual success thrives.</>),
+      title: "Vision:",
+      desc: (<>
+         To establish Cash Cow as the leading platform for entrepreneurs seeking inspiration, practical
+         strategies, and access to exclusive opportunities, while building a global community that
+         rewards creativity and collaboration.</>),
    },
-   {
-      id: 3,
-      title: "Our Vision",
-      desc: (<>To establish Cash Cow as the leading platform for entrepreneurs seeking inspiration, practical strategies, and access to exclusive opportunities, while building a global community that rewards creativity and collaboration.</>),
-   },
+   // {
+   //    id: 3,
+   //    title: "Why Choose Cash Cow?",
+   //    desc: (<>Cash Cow is more than a cryptocurrency or a platform—it’s a movement. It’s a transformative
+   //       ecosystem that redefines how entrepreneurs access resources, connect with like-minded
+   //       individuals, and create meaningful change in their industries. Holding the Cash Cow token isn’t
+   //       just an investment; it’s an opportunity to participate in a dynamic community where fun meets
+   //       functionality, and creativity meets opportunity.</>),
+   // },
 ]
 
 
@@ -67,7 +77,7 @@ const ChartArea = () => {
                </div>
             </div>
          </div>
-         <div className="row justify-content-between">
+         <div className="row justify-content-between" style={{ width: '83.5rem' }}>
             <div className="col-xl-4">
                {intro_data.map((item) => (
                   <div key={item.id} className="intro-wrap">
@@ -77,24 +87,20 @@ const ChartArea = () => {
                ))}
             </div>
             <div className="col-xl-6">
-               <div className="intro-thumb1 alltuchtopdown">
-                  {/* <Image src="/assets/img/images/coin.png" alt="CoinImage" itemID='coin' width={500} height={500} id="coin"/> */}
+               <div className="intro-thumb1 alltuchtopdown" style={{ marginLeft: '118px' }}>
+                  <Image src={intro_thumb} alt="img" />
                </div>
-               <div className="intro-wrap mt-50">
-                  <h6 className="intro-wrap-title">The Cash Cow Movement</h6>
-                  <p className="intro-wrap-text">Join the Herd:
-                  By choosing Cash Cow, you’re not just joining a platform, you’re embracing a movement. 
-                      This is your opportunity to turn ambition into achievement, dreams into strategy, 
-                      and ideas into success. Whether you’re a seasoned entrepreneur or just starting your journey,
-                       Cash Cow provides the tools, community, and support you need to thrive in the digital age.
-                      With Cash Cow, the possibilities are endless. Be part of the herd. Grow with Cash Cow.
-</p>
-                  {/* <p className="intro-wrap-text mt-40">Vision:
-                     To establish Cash Cow as the leading platform for entrepreneurs seeking inspiration,
-                      practical strategies, and access to exclusive opportunities, while building a global 
-                      community that rewards creativity and collaboration.</p> */}
-                  </div>
-            
+               <div className="intro-wrap mt-50" style={{ marginTop: '168px', width: '33.5rem' }}>
+                  <h6 className="intro-wrap-title">Our Mission & Vission</h6>
+                  <p className="intro-wrap-text">Cash Cow is more than a cryptocurrency or a platform—it’s a movement. It’s a transformative
+ecosystem that redefines how entrepreneurs access resources, connect with like-minded
+individuals, and create meaningful change in their industres.</p>
+                  <p className="intro-wrap-text mt-40">Holding the Cash Cow token isn’t
+just an investment; it’s an opportunity to participate in a dynamic community where fun meets
+functionality, and creativity meets opportunity.</p>
+
+                  
+               </div>
             </div>
          </div>
       </div>

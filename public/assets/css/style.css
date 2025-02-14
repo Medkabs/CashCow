@@ -4129,9 +4129,12 @@ label {
   }
 
   .intro-wrap:not(:last-child) {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
+    /* margin-top: 100px; */
   }
   .intro-wrap .intro-wrap-title {
+    /* margin-top: 100px; */
+    
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 30px;
@@ -4771,8 +4774,8 @@ label {
     transform: rotate(0);
   }
   .accordion-card .accordion-button:not(.collapsed) .number {
-    background: var(--tg-white);
-    color: var(--tg-white);
+    background: pink;
+    color: navy;
   }
   .accordion-card .accordion-collapse {
     border: none;

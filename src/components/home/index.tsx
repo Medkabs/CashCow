@@ -21,7 +21,7 @@ const Home = () => {
          <RoadMapArea />
          {/* <Team /> */}
          <FAQ />
-         <DownloadArea />
+         {/* <DownloadArea /> */}
       </>
    )
 }
