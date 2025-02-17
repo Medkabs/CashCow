@@ -10,7 +10,7 @@ import brandImg_5 from "@/assets/img/brand/brand_img05.png"
 import brandImg_6 from "@/assets/img/brand/brand_img06.png"
 import brandImg_7 from "@/assets/img/brand/brand_img07.png"
 
-const brand_data: StaticImageData[] = [brandImg_1, brandImg_2, brandImg_3, brandImg_4, brandImg_5, brandImg_6,brandImg_7,brandImg_4];
+const brand_data: StaticImageData[] = [brandImg_1, brandImg_2, brandImg_1, brandImg_2, brandImg_1, brandImg_2,brandImg_1,brandImg_2];
 
 const settings = {
    dots: false,
@@ -66,7 +66,7 @@ const Brand = () => {
                   </div>
                </div>
             </div>
-            <div className="brand-item-wrap">
+            <div className="brand-item-wrap" id = "brandz">
                <Slider {...settings} className="row g-0 brand-active">
                   {brand_data.map((item, i) => (
                      <div key={i} className="col-12">

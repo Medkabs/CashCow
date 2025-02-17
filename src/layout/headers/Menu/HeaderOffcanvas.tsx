@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logo_1 from "@/assets/img/logo/logo.png";
-
+import coinz from "@/assets/img/images/coinz.png";
 const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
    return (
       <>
@@ -12,22 +12,18 @@ const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
                   <button onClick={() => setOffCanvas(false)}><i className="far fa-window-close"></i></button>
                </div>
                <div className="logo-side mb-30">
-                  <Link href="/"><Image src={logo_1} alt="Logo" /></Link>
+                  <Link href="/"><Image src={coinz} alt="coinz" width={0} height={0}/></Link>
                </div>
                <div className="side-info mb-30">
                   <div className="contact-list mb-30">
-                     <h4>Office Address</h4>
-                     <p>123/A, Miranda City Likaoli <br /> Prikano, Dope</p>
+                     <h4>Cash Cow</h4>
+                     
                   </div>
-                  <div className="contact-list mb-30">
-                     <h4>Phone Number</h4>
-                     <p>+0989 7876 9865 9</p>
-                     <p>+(090) 8765 86543 85</p>
-                  </div>
+                 
                   <div className="contact-list mb-30">
                      <h4>Email Address</h4>
-                     <p>info@example.com</p>
-                     <p>example.mail@hum.com</p>
+                     <p>info@cashcowtokens.com</p>
+                     
                   </div>
                </div>
                <div className="social-icon-right mt-30">
