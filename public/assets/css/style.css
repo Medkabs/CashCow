@@ -74,6 +74,17 @@
 ===============================*/
 
 
+
+/* #brandz{
+  width: 350px;
+  position:;
+
+} */
+.alltuchtopdown {
+    position: relative;
+    display: block !important;  /* Ensures it's not hidden */
+    
+}
 #heroimage{
   width: 1320px; 
   height: auto; 
@@ -3726,7 +3737,7 @@ label {
     margin: 37px 0 25px;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 .hero-countdown-wrap .skill-feature_list li {
     color: var(--tg-white);

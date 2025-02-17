@@ -64,7 +64,7 @@ const Banner = () => {
                   <li>140,000 $ chosen</li>
                </ul>
                <div className="banner-countdown-wrap">
-                  <div className="coming-time" data-countdown="2024/8/29">
+                  <div className="coming-time" data-countdown="2025/2/20">
                   <CountdownClock />
                   </div>
                </div>

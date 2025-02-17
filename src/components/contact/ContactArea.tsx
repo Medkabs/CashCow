@@ -9,23 +9,23 @@ interface DataType {
 }
 
 const contact_data: DataType[] = [
-   {
-      id: 1,
-      icon: "fas fa-map-marker-alt",
-      title: "Location",
-      info: (<>1901 Thornridge Cir. <br /> Shiloh, Hawaii</>),
-   },
-   {
-      id: 2,
-      icon: "fas fa-phone-alt",
-      title: "Contact",
-      info: (<><Link href="tel:0123456789">+88(0) 555-0108</Link> <br /> <Link href="tel:0123456789">+88(0) 555-01117</Link></>),
-   },
+   // {
+   //    id: 1,
+   //    icon: "fas fa-map-marker-alt",
+   //    title: "Location",
+   //    info: (<>1901 Thornridge Cir. <br /> Shiloh, Hawaii</>),
+   // },
+   // {
+   //    id: 2,
+   //    icon: "fas fa-phone-alt",
+   //    title: "Contact",
+   //    info: (<><Link href="tel:0123456789">+88(0) 555-0108</Link> <br /> <Link href="tel:0123456789">+88(0) 555-01117</Link></>),
+   // },
    {
       id: 4,
       icon: "fas fa-business-time",
-      title: "Visit Between",
-      info: (<>Mon - Sat : 8.00-5.00 <br /> Sunday : Closed</>),
+      title: "info@cashcowtokens.com",
+      info: (<> email</>),
    },
 ]
 

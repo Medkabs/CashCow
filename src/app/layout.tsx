@@ -26,6 +26,7 @@ export default function RootLayout({
       <head>
         <meta name="description" content="Xeco - ICO & Crypto Landing Page Template" />
         <link rel="icon" href="/favicon.png" type="image/png" />
+        
       </head>
       <body suppressHydrationWarning={true} className={` ${body.variable} ${heading.variable}`}>
         <Header />
