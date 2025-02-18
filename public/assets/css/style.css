@@ -80,16 +80,219 @@
   position:;
 
 } */
-.alltuchtopdown {
-    position: relative;
-    display: block !important;  /* Ensures it's not hidden */
+/* Default Styling for #bread */
+#burger{
+  width: 20px;
+}
+#coinx{
+  width:52px;
+ 
+  
+}
+#bread {
+  position: absolute;
+ margin: 0 0 -400px 0;
+ 
+  max-width: 200px;
+  opacity: 0.7;
+}
+
+/* Tablet Screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  #bread {
+    max-width: 200px;
     
+  }
 }
-#heroimage{
-  width: 1320px; 
-  height: auto; 
-  margin: -250px -500px;
+
+/* Mobile Screens (480px - 768px) */
+@media (max-width: 768px) {
+  #bread {
+    max-width: 80px;
+    min-width: 40px;
+    bottom: 5%;
+  }
 }
+
+/* Small Mobile Screens (<480px) */
+@media (max-width: 480px) {
+  #bread {
+    max-width: 80px;
+    margin: auto 0 auto;
+    opacity: 0.5;
+  }
+}
+
+/* Default Styling for #dark */
+#dark {
+  position: absolute;
+  width: 300px;
+  left: 8%;
+  margin: 0px 0 -160px;
+  
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Tablet Screens (768px - 1024px) */
+@media (max-width: 1560px) {
+  #dark {
+    max-width: 300px;
+   
+    
+    left: -2%;
+  }
+}
+@media (max-width: 1700px) {
+  #dark {
+    max-width: 300px;
+   
+    left: 7%;
+  }
+}
+/* Tablet Screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  #dark {
+    max-width: 300px;
+    /* top: 5%; */
+    left: 2%;
+  }
+}
+
+/* Mobile Screens (480px - 768px) */
+@media (max-width: 768px) {
+  #dark {
+    max-width: 100px;
+    /* top: 3%; */
+    left: 1%;
+    opacity: 0.3;
+  }
+}
+
+/* Small Mobile Screens (<480px) */
+@media (max-width: 480px) {
+  #dark {
+    display: none; /* Hide image on very small screens */
+  }
+}
+
+
+#wallet {
+  position: absolute;
+  bottom: 16%;
+  right: 15%;
+  max-width: 180px;
+  opacity: 0.5;
+  
+}
+
+@media (max-width: 1500px) {
+  
+  #wallet {
+    max-width: 140px;
+    bottom: -9%;
+    
+  }
+}
+/* Mobile Screens (480px - 768px) */
+@media (max-width: 768px) {
+
+  #wallet {
+    max-width: 100px;
+    bottom: 3%;
+    right: 5%;
+    opacity: 0.3;
+  }
+}
+
+/* Small Mobile Screens (<480px) */
+@media (max-width: 480px) {
+  #dark, 
+  #wallet {
+    display: none; /* Hide images on very small screens */
+  }
+}
+
+    
+
+#heroimage {
+  width: 100%;            /* Makes it responsive */
+  max-width: 1320px;      /* Prevents it from growing too big */
+  min-width: 1100px;      /* Ensures it doesn’t shrink too much on large screens */
+  height: auto;           /* Maintains aspect ratio */
+  margin: -150px -350px;    /* Keeps it centered */
+  display: flex;         /* Removes extra space */
+}
+
+/* Allow flexibility for medium-sized screens */
+
+@media (max-width: 1600px) {
+  #heroimage {
+    max-width: 97%;  
+    min-width: 950px;
+    margin: -200px -320px;
+  }
+}
+@media (max-width: 1200px) {
+  #heroimage {
+    max-width: 95%;  
+    min-width: 900px;
+    margin: -200px -300px;
+  }
+}
+
+@media (max-width: 1173px) {
+  #heroimage {
+    max-width: 95%;  
+    min-width: 800px;
+    margin: -200px -270px;
+  }
+}
+
+/* ✅ Adjust for tablets */
+@media (max-width: 992px) {
+  #heroimage {
+    max-width: 90%;
+    min-width: 800px;
+    margin: -100px auto;
+  }
+}
+
+/* ✅ Make it fully responsive for mobile */
+@media (max-width: 768px) {
+  #heroimage {
+    max-width: 100%;  
+    min-width: 800px;  /* Removes min-width for smaller screens */
+    margin: -120px ;
+   align-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #heroimage {
+    max-width: 100%;  
+    min-width: 750px;
+    margin: -100px -150px ;
+    align-content:  center;
+  }
+}
+@media (max-width: 400px) {
+  #heroimage {
+    max-width: 100%;  
+    min-width: 750px;
+    margin: -100px -160px ;
+    align-items: center;
+  }
+}
+@media (max-width: 360px) {
+  #heroimage {
+    max-width: 100%;  
+    min-width: 550px;
+    margin: -100px -130px ;
+    align-items: center;
+  }
+}
+
 .alltuchtopdown {
   width: 280px; /* Adjust as needed */
   height: auto; /* Maintain aspect ratio */
@@ -102,6 +305,11 @@
   }
 }
 
+@media (max-width: 480px) {
+  .alltuchtopdown {
+    width: 80px; /* Smaller width for mobile screens */
+  }
+}
 
 :root {
     --tg-body-font-family: 'Outfit', sans-serif;
