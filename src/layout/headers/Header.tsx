@@ -23,7 +23,7 @@ const Header = () => {
                             <div className="col-12">
                                 <div className="menu-wrap">
                                     <nav className="menu-nav">
-                                        <div className="logo">
+                                        <div className="logo" id= "coinx">
                                             <Link href="/"><Image src={logo_1} alt="Logo" /></Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">

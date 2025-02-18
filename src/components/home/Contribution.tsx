@@ -32,8 +32,8 @@ const Contribution = () => {
             </div>
          </div>
          <div className="contribution-shape-wrap">
-            <Image src={contributionShape_1} alt="" className="alltuchtopdown" />
-            <Image src={contributionShape_2} alt="" className="leftToRight" />
+            <Image src={contributionShape_1} alt="" className="alltuchtopdown" id ="dark"/>
+            <Image src={contributionShape_2} alt="" className="leftToRight" id= "wallet" />
          </div>
       </section>
    )
