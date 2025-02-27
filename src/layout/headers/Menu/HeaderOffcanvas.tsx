@@ -27,10 +27,14 @@ const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
                   </div>
                </div>
                <div className="social-icon-right mt-30">
-                  <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                  <Link href="#"><i className="fab fa-twitter"></i></Link>
-                  <Link href="#"><i className="fab fa-google-plus-g"></i></Link>
-                  <Link href="#"><i className="fab fa-instagram"></i></Link>
+                  {/* <Link href="#"><i className="fab fa-facebook-f"></i></Link> */}
+                  <Link    href="https://www.twitter.com/thecashcowtoken" 
+        target="_blank" 
+        rel="noopener noreferrer" ><i className="fab fa-twitter"></i></Link>
+                  {/* <Link href="#"><i className="fab fa-google-plus-g"></i></Link> */}
+                  <Link    href="https://www.instagram.com/cashcowtoken" 
+        target="_blank" 
+        rel="noopener noreferrer" ><i className="fab fa-instagram"></i></Link>
                </div>
             </div>
             <div onClick={() => setOffCanvas(false)} className={`offcanvas-overly ${offCanvas ? "active" : ""}`}></div>

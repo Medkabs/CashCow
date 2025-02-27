@@ -1202,12 +1202,13 @@ label {
 /*=============================
 	05. Banner
 ===============================*/
+/*
 .banner-bg {
     background-size: cover;
     background-position: center;
     border-radius: 0 0 20px 20px;
     position: relative;
-    padding: 140px 0px 120px;
+     padding: 140px 0px 120px; 
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1223,7 +1224,7 @@ label {
     background: linear-gradient(0deg, var(--tg-primary-color) 0%, var(--tg-green) 47.60%, transparent 65.23%);
     z-index: -1;
     border-radius: 0px 0px 20px 20px;
-}
+}*/
 .banner-content {
     position: relative;
     z-index: 1;
@@ -3832,10 +3833,14 @@ label {
       font-size: 34px;
     }
 }
+.rootFile {
+  width: 100%;
+}
+
 .hero-style1 {
     position: relative;
     z-index: 6;
-    padding: 220px 0 30px;
+    padding: 256px 0 110px;
 }
 .hero-style1 .btn-wrap {
     margin-top: 43px;
@@ -4322,6 +4327,7 @@ label {
     position: relative;
     text-align: center;
     margin-top: -130px;
+    margin-left: 118px;
 }
 .intro-thumb1 img {
     width: 276px;
@@ -4341,15 +4347,39 @@ label {
     transform: translate(-50%, 0);
     z-index: -1;
   }
+
+  
   @media (max-width: 1199px) {
     .intro-thumb1 {
+        margin-left: 42%;
+
       margin-top: 70px;
     }
   }
+    @media (max-width: 990px) {
+      .intro-thumb1 {
+          margin-left: 35%;
+  
+        margin-top: 70px;
+      }
+    }
+    @media (max-width: 990px) {
+      .intro-thumb1 {
+          margin-left: 35%;
+  
+        margin-top: 70px;
+      }
+    }
+  
 
   .intro-wrap:not(:last-child) {
     margin-bottom: 100px;
     /* margin-top: 100px; */
+  }
+  @media (max-width: 626px) {
+    .intro-thumb1 {
+      margin-left: 55%
+    }
   }
   .intro-wrap .intro-wrap-title {
     /* margin-top: 100px; */
@@ -4370,6 +4400,67 @@ label {
   }
   .intro-wrap .intro-wrap-text {
     margin-bottom: -0.4em;
+  }
+  /* Char text */
+  .chart-text{
+    width: 83.3rem;
+  }
+
+@media (max-width: 1199px) {
+  .chart-text{
+    width: 50rem;
+  }
+}
+@media (max-width: 990px) {
+  .chart-text{
+    width: 37rem;
+    text-wrap: wrap;
+  }
+}
+@media (max-width: 626px) {
+  .chart-text{
+    /* margin-top: 168px !important; */
+
+    width: 22rem  !important;
+  }
+}
+/* @media (max-width: 626px) {
+  .chart-text{
+    width: 37rem;
+  }
+} */
+
+.col-xl-4,
+.intro-wrap {
+  /* width: auto; */
+   /* Or max-width: 100%; */
+  overflow-wrap: break-word;
+}
+  .chart-text2{
+    margin-top: 168px;
+
+    width: 33.5%;
+  }
+  @media (max-width: 1199px) {
+    .chart-text2{
+      margin-top: 168px !important;
+  
+      width: 50rem  !important;
+    }
+  }
+  @media (max-width: 990px) {
+    .chart-text2{
+      margin-top: 168px !important;
+  
+      width: 37rem  !important;
+    }
+  }
+  @media (max-width: 626px) {
+    .chart-text2{
+      margin-top: 168px !important;
+  
+      width: 22rem  !important;
+    }
   }
 
 /* Roadmap 2 ---------------------------------- */
@@ -7680,13 +7771,26 @@ label {
 .banner-bg {
     background-size: cover;
     background-position: center;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 2rem;
     position: relative;
-    padding: 140px 0px 120px;
-    min-height: 100vh;
+    padding: 230px 0px 60px;
+    min-height: 55vh;
     display: flex;
     align-items: center;
     margin: 0 20px;
+}
+@media (max-width: 990px) {
+  .banner-bg {
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20px 2rem;
+    position: relative;
+    padding: 230px 0px 60px;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
 }
 .banner-bg::before {
     content: "";

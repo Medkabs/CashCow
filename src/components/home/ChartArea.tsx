@@ -77,7 +77,7 @@ const ChartArea = () => {
                </div>
             </div>
          </div>
-         <div className="row justify-content-between" style={{ width: '83.5rem' }}>
+         <div className="chart-text row justify-content-between"  >
             <div className="col-xl-4">
                {intro_data.map((item) => (
                   <div key={item.id} className="intro-wrap">
@@ -87,11 +87,11 @@ const ChartArea = () => {
                ))}
             </div>
             <div className="col-xl-6">
-               <div className="intro-thumb1 alltuchtopdown" style={{ marginLeft: '118px' }}>
+               <div className="intro-thumb1 alltuchtopdown" >
                   <Image src={intro_thumb} alt="img" />
                </div>
-               <div className="intro-wrap mt-50" style={{ marginTop: '168px', width: '33.5rem' }}>
-                  <h6 className="intro-wrap-title">Our Mission & Vission</h6>
+               <div className="chart-text2 " style={{ marginTop: '168px', width: '33.5rem' }}>
+                  <h6 className="intro-wrap-title">Why Choose Cash Cow?</h6>
                   <p className="intro-wrap-text">Cash Cow is more than a cryptocurrency or a platform—it’s a movement. It’s a transformative
 ecosystem that redefines how entrepreneurs access resources, connect with like-minded
 individuals, and create meaningful change in their industres.</p>

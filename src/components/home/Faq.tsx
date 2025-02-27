@@ -17,7 +17,7 @@ const FAQ = () => {
       <div className="pt-140 pb-140 overflow-hidden">
          <div className="container">
             <div className="row gy-40 justify-content-between">
-               <div className="col-xl-4 text-xl-start">
+               <div className="col-xl-4 text-xl-start text-center">
                   <div className="section-title mb-50">
                      <h2 className="title style2">Frequently Asked Questions</h2>
                      <p className="sec-text">DO have any kind Of questions?

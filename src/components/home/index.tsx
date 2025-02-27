@@ -11,7 +11,7 @@ import RoadMapArea from "./RoadMapArea";
 
 const Home = () => {
    return (
-      <>
+      <div className="rootFile">
          <Banner />
          <Contribution />
          <Brand />
@@ -22,7 +22,7 @@ const Home = () => {
          {/* <Team /> */}
          <FAQ />
          {/* <DownloadArea /> */}
-      </>
+      </div>
    )
 }
 
