@@ -4,36 +4,43 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import blog_data from "@/data/BlogData";
 import Wrapper from "@/layout/Wrapper";
 
-// Define the type for the page props, acknowledging both params and searchParams are Promises
+// Define the type for the page props, only including params (which is a Promise)
 interface BlogDetailsPageProps {
   params: Promise<{ id: string[]; }>; // params is a Promise resolving to { id: string[] }
-  // searchParams is also a Promise resolving to the search params object
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  // Removed searchParams as they are incompatible with static export of this route
 }
 
 export const metadata = {
    title: "Blog Details Xeco - ICO & Crypto Landing Page React Next js Template",
 };
 
-// The page component is async to await the Promises
-const BlogDetailsPage = async ({ params, searchParams }: BlogDetailsPageProps) => {
+// Async function to generate static params for all blog posts
+export async function generateStaticParams() {
+  return blog_data.map((item) => ({
+    id: [item.id.toString()], // Assuming /blog-details/ID structure
+  }));
+}
 
-   // Await both promises
+
+// The page component is async to await the params Promise
+// Removed searchParams from the function signature
+const BlogDetailsPage = async ({ params }: BlogDetailsPageProps) => {
+
+   // Await the params Promise
    const awaitedParams = await params;
-   const awaitedSearchParams = await searchParams; // Await searchParams
+
+   // Removed: Awaiting searchParams is no longer needed
+   // const awaitedSearchParams = await searchParams;
 
    // Access the id array from the awaited params object
-   const blogIdSegment = awaitedParams.id[awaitedParams.id.length - 1]; // Get the last segment
+   const blogIdSegment = awaitedParams.id[awaitedParams.id.length - 1];
 
    const blogIdNumber = Number(blogIdSegment); // Convert the segment to a number
 
    const single_blog = blog_data.find((item) => Number(item.id) === blogIdNumber);
 
-   // You can now also use awaitedSearchParams if needed
-   // const searchTerm = awaitedSearchParams.q;
-
    if (!single_blog) {
-       // Handle case where blog is not found
+       // This block should ideally not be reached for statically generated pages
        return (
          <Wrapper>
             <main>
