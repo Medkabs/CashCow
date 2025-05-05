@@ -1,5 +1,5 @@
 { 
-  "Homepage":http://Medkabs.github.io/CashCow",
+  "Homepage":"http://Medkabs.github.io/CashCow",
   "name": "xeco",
   "version": "0.1.0",
   "private": true,
@@ -7,9 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-    "predeploy": npm run build
-    "deploy": "gh-pages -d build",
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
