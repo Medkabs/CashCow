@@ -55,15 +55,15 @@ const Footer = () => {
                      </div>
                   ))}
 
-                  <div className="col-xl-3 col-lg-4 col-sm-8">
+                  {/* <div className="col-xl-3 col-lg-4 col-sm-8">
                      <div className="footer-widget">
                         <h4 className="fw-title">Subscribe Newsletter</h4>
                         <div className="footer-newsletter">
-                           <p>Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
+                           <p>In Today's world, informarion is currency</p>
                            <NewsletterForm />
                         </div>
                      </div>
-                  </div>
+                  </div> */}
                </div>
             
 

@@ -11,18 +11,18 @@ const Contribution = () => {
             <div className="row justify-content-center">
                <div className="col-lg-10">
                   <div className="contribution-title">
-                     <h2 className="title"><span>$45,256,432</span> Contribution Receive</h2>
+                     <h2 className="title"><span>$1.2 M</span> arket Cap Goal</h2>
                   </div>
                   <div className="progress-wrap">
                      <ul className="list-wrap">
-                        <li>Pre-Sale</li>
-                        <li>soft cap</li>
-                        <li>bonus</li>
+                        <li>$240K</li>
+                        <li>$480K</li>
+                        <li>$720K</li>
                      </ul>
                      <div className="progress" role="progressbar">
-                        <div className="progress-bar" style={{ width: "83%" }}></div>
+                        <div className="progress-bar" style={{ width: "1%" }}></div>
                      </div>
-                     <h6 className="progress-title"> 65 target raised <span>1 ETH = $1000 = 3177.38 CIC</span></h6>
+                     <h6 className="progress-title"> $0<span>$1.2M</span></h6>
                   </div>
                   <div className="contribution-btn">
                      <Link href="/contact" className="btn">Purchase a Token</Link>

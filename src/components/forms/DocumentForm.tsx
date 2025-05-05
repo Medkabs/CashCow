@@ -29,7 +29,7 @@ const DocumentForm = () => {
    };
 
    return (
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form action="https://formsubmit.co/info@cashcowtoken.com" method="POST" >
          <div className="row">
             <div className="col-md-6">
                <div className="form-grp">
