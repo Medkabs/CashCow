@@ -26,21 +26,21 @@ const DownloadArea = () => {
                            </ul>
                         </div>
                         <div className="download-btn-wrap">
-                           <Link href="#" className="download-btn"><Image src={downloadBtnImg_1} alt="" /></Link>
-                           <Link href="#" className="download-btn"><Image src={downloadBtnImg_2} alt="" /></Link>
+                           <Link href="#" className="download-btn"><Image src={downloadBtnImg_1} alt="" unoptimized={true} /></Link>
+                           <Link href="#" className="download-btn"><Image src={downloadBtnImg_2} alt="" unoptimized={true} /></Link>
                         </div>
                      </div>
                   </div>
                   <div className="col-lg-6">
                      <div className="download-img">
-                        <Image src={downloadImg_1} alt="" />
-                        <Image src={downloadImg_2} alt="" />
+                        <Image src={downloadImg_1} alt="" unoptimized={true} />
+                        <Image src={downloadImg_2} alt="" unoptimized={true} />
                      </div>
                   </div>
                </div>
                <div className="download-shape-wrap">
-                  <Image src={downloadShape_1} alt="" />
-                  <Image src={downloadShape_2} alt="" />
+                  <Image src={downloadShape_1} alt="" unoptimized={true} />
+                  <Image src={downloadShape_2} alt="" unoptimized={true} />
                </div>
             </div>
          </div>
