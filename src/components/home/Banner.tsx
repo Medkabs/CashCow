@@ -27,7 +27,7 @@ const Banner = () => {
                <div className="row flex-row-reverse">
                   <div className="col-lg-3">
                      <div className="hero-thumb alltuchtopdown" id = "heroimage">
-                        <Image src={hero_thumb} alt="img" />
+                        <Image src={hero_thumb} alt="img" unoptimized={true} />
                      </div>
                   </div>
                   <div className="col-lg-9">
