@@ -46,7 +46,7 @@ const BlogDetailsArea = ({ single_blog }: any) => {
                <div className="col-lg-8">
                   <div className="blog-details-wrap">
                      <div className="blog-details-thumb">
-                        {single_blog?.thumb ? <Image src={single_blog.thumb} alt="image" unoptimized={true}/> : <Image src={blogThumb_1} alt="image" />}
+                        {single_blog?.thumb ? <Image src={single_blog.thumb} alt="image" unoptimized={true}/> : <Image src={blogThumb_1} alt="image" unoptimized={true}/>}
                      </div>
                      <div className="blog-details-content">
                         <div className="blog-meta">
