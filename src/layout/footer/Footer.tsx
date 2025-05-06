@@ -80,8 +80,8 @@ const Footer = () => {
          </div>
 
          <div className="footer-shape-wrap">
-            <Image src={footerShape_1} alt="" className="alltuchtopdown" />
-            <Image src={footerShape_2} alt="" className="leftToRight" />
+            <Image src={footerShape_1} alt="" className="alltuchtopdown" unoptimized={true} />
+            <Image src={footerShape_2} alt="" className="leftToRight" unoptimized={true} />
          </div>
          {/* </div> */}
       </footer>
