@@ -88,7 +88,7 @@ const ChartArea = () => {
             </div>
             <div className="col-xl-6">
                <div className="intro-thumb1 alltuchtopdown" >
-                  <Image src={intro_thumb} alt="img" />
+                  <Image src={intro_thumb} alt="img" unoptimized={true}/>
                </div>
                <div className="chart-text2 " style={{ marginTop: '168px', width: '33.5rem' }}>
                   <h6 className="intro-wrap-title">Why Choose Cash Cow?</h6>
