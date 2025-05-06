@@ -71,7 +71,7 @@ const Brand = () => {
                   {brand_data.map((item, i) => (
                      <div key={i} className="col-12">
                         <div className="brand-item">
-                           <Image src={item} alt="" />
+                           <Image src={item} alt="" unoptimized={true} />
                         </div>
                      </div>
                   ))}
