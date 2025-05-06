@@ -24,7 +24,7 @@ const FAQ = () => {
                         We&apos;re here to help.</p>
                   </div>
                   <div className="faq-thumb mt-60">
-                     <Image src={faq_thumb_1} alt="img" />
+                     <Image src={faq_thumb_1} alt="img" unoptimized={true} />
                   </div>
                </div>
                <div className="col-xxl-6 col-xl-8">
