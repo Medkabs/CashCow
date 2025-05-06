@@ -20,11 +20,11 @@ const Sidebar = ({ isActive, setIsActive }: any) => {
                     </div>
                     <div className="social-links">
                         <ul className="clearfix list-wrap">
-                            <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com/share/16FQUrGEaB/?mibextid=wwXlfr"><i className="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://x.com/thecasjcowtoken?s=11"><i className="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/cashcowtoken?igsh=aGpwMnB0cmxyNHdw"><i className="fab fa-instagram"></i></a></li>
+{/*                             <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li> */}
+{/*                             <li><a href="#"><i className="fab fa-youtube"></i></a></li> */}
                         </ul>
                     </div>
                 </nav>
