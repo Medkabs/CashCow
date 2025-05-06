@@ -45,7 +45,7 @@ const FeatureTwo = () => {
                         <div key={item.id} className="col-lg-4 col-md-6">
                            <div className="features-item-two">
                               <div className="features-img-two">
-                                 <Image src={item.img} alt="" />
+                                 <Image src={item.img} alt="" unoptimized={true} />
                               </div>
                               <div className="features-content-two">
                                  <h2 className="title">{item.title}</h2>
@@ -59,9 +59,9 @@ const FeatureTwo = () => {
                   <div className="col-lg-12">
                      <div className="section-title section-title-two text-center">
                         <h2 className="title">
-                           <Image src={featuresTitleImg_1} alt="" />
+                           <Image src={featuresTitleImg_1} alt="" unoptimized={true} />
                            This isn’t just a short-term hype 
-                           <Image src={featuresTitleImg_2} alt="" />
+                           <Image src={featuresTitleImg_2} alt="" unoptimized={true} />
                            We are  building a token and brand that stands the test of time.</h2>
                            
                      </div>
@@ -71,8 +71,8 @@ const FeatureTwo = () => {
             </div>
          </div>
          <div className="features-shape-wrap">
-            <Image src={featuresShape_1} alt="" className="alltuchtopdown" />
-            <Image src={featuresShape_2} alt="" className="leftToRight" />
+            <Image src={featuresShape_1} alt="" className="alltuchtopdown" unoptimized={true} />
+            <Image src={featuresShape_2} alt="" className="leftToRight" unoptimized={true} />
          </div> */}
       </section>
    )
