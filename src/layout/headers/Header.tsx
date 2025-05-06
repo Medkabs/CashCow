@@ -24,7 +24,7 @@ const Header = () => {
                                 <div className="menu-wrap">
                                     <nav className="menu-nav">
                                         <div className="logo" id= "coinx">
-                                            <Link href="/"><Image src={logo_1} alt="Logo" /></Link>
+                                            <Link href="/"><Image src={logo_1} alt="Logo" unoptimized={true} /></Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <NavMenu />
