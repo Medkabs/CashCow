@@ -40,7 +40,7 @@ const BlogRcPost = () => {
             {rc_data.map((item) => (
                <div key={item.id} className="rc-post-item">
                   <div className="thumb">
-                     <Link href="/blog-details"><Image src={item.img} alt="" /></Link>
+                     <Link href="/blog-details"><Image src={item.img} alt="" unoptimized={true} /></Link>
                   </div>
                   <div className="content">
                      <span className="date">{item.date}</span>
