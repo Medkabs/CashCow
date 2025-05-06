@@ -13,7 +13,7 @@ const BlogComment = () => {
                <li>
                   <div className="comments-box">
                      <div className="comments-avatar">
-                        <Image src={commentAvatar_1} alt="img" />
+                        <Image src={commentAvatar_1} alt="img" unoptimized={true} />
                      </div>
                      <div className="comments-text">
                         <div className="avatar-name">
@@ -28,7 +28,7 @@ const BlogComment = () => {
                      <li>
                         <div className="comments-box">
                            <div className="comments-avatar">
-                              <Image src={commentAvatar_2} alt="img" />
+                              <Image src={commentAvatar_2} alt="img" unoptimized={true} />
                            </div>
                            <div className="comments-text">
                               <div className="avatar-name">
