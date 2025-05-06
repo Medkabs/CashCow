@@ -62,7 +62,7 @@ const FeatureOne = () => {
                            <p>{item.desc}</p>
                         </div>
                         <div className="features-img">
-                           <Image src={item.img} alt="" />
+                           <Image src={item.img} alt="" unoptimized={true} />
                         </div>
                      </div>
                   </div>
