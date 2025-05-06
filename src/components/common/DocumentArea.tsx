@@ -45,7 +45,7 @@ const DocumentArea = () => {
             </div>
          </div>
          {/* <div className="document-shape">
-            <Image src={docShape} alt="" className="alltuchtopdown" />
+            <Image src={docShape} alt="" className="alltuchtopdown" unoptimized={true}/>
          </div> */}
       </section>
    )
