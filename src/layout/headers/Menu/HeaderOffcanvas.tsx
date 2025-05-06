@@ -12,7 +12,7 @@ const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
                   <button onClick={() => setOffCanvas(false)}><i className="far fa-window-close"></i></button>
                </div>
                <div className="logo-side mb-30" >
-                  {/* <Link href="/"><Image src={coinz} alt="coinz" /></Link> */}
+                  {/* <Link href="/"><Image src={coinz} alt="coinz" unoptimized={true} /></Link> */}
                </div>
                <div className="side-info mb-30">
                   <div className="contact-list mb-30">
