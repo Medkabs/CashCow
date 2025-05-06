@@ -1,54 +1,51 @@
-"use client"
-import UseSticky from "@/hooks/UseSticky";
-import React, { useState, useEffect } from "react";
+import Image from "next/image"
+import Link from "next/link"
 
-const ScrollToTop = () => {
-   const { sticky }: { sticky: boolean } = UseSticky();
+import commentAvatar_1 from "@/assets/img/blog/comment01.png"
+import commentAvatar_2 from "@/assets/img/blog/comment02.png"
 
-   // Initialize to false, will be updated client-side
-   const [showScroll, setShowScroll] = useState(false);
-
-   const scrollTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-   };
-
-   useEffect(() => {
-      // Define checkScrollTop inside useEffect as it's only used here
-      const checkScrollTop = () => {
-         // Use a check to ensure window is defined before accessing window.pageYOffset
-         if (typeof window !== 'undefined') {
-             if (!showScroll && window.pageYOffset > 400) {
-                setShowScroll(true);
-             } else if (showScroll && window.pageYOffset <= 400) {
-                setShowScroll(false);
-             }
-         }
-      };
-
-      // Add listener only if window is defined (guarantees client-side)
-      if (typeof window !== 'undefined') {
-          window.addEventListener("scroll", checkScrollTop);
-      }
-
-
-      // Cleanup function to remove the event listener
-      return () => {
-          if (typeof window !== 'undefined') { // Ensure removeListener also runs client-side
-              window.removeEventListener("scroll", checkScrollTop);
-          }
-      };
-   }, [showScroll]); // Include showScroll in the dependency array
-
+const BlogComment = () => {
    return (
-      <>
-         {/* Conditionally render the button based on showScroll state */}
-         {showScroll && (
-            <button onClick={scrollTop} type="button" className={`scroll-top scroll-to-target ${sticky && "open"}`}>
-               <i className="fas fa-angle-up"></i>
-            </button>
-         )}
-      </>
-   );
-};
+      <div className="comments-wrap">
+         <h3 className="comments-wrap-title">Comments 02</h3>
+         <div className="latest-comments">
+            <ul className="list-wrap">
+               <li>
+                  <div className="comments-box">
+                     <div className="comments-avatar">
+                        <Image src={commentAvatar_1} alt="img" />
+                     </div>
+                     <div className="comments-text">
+                        <div className="avatar-name">
+                           <h6 className="name">Reed Floren <Link href="#" className="reply-btn">Reply</Link></h6>
+                           <span className="date">August 13, 2023</span>
+                        </div>
+                        <p>The platform itself was incredibly user-friendly, making it easy for me to participate in the ICO. The intuitive interface guided me through the token purchase process seamlessly.</p>
+                     </div>
+                  </div>
+                  
+                  <ul className="children list-wrap">
+                     <li>
+                        <div className="comments-box">
+                           <div className="comments-avatar">
+                              <Image src={commentAvatar_2} alt="img" />
+                           </div>
+                           <div className="comments-text">
+                              <div className="avatar-name">
+                                 <h6 className="name">Tony Dargis <Link href="#" className="reply-btn">Reply</Link></h6>
+                                 <span className="date">August 15, 2023</span>
+                              </div>
+                              <p>What stood out to me the most was the exceptional customer support. The team behind the platform was responsive and
+                                 helpful, promptly addressing my inquiries and providing.</p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   )
+}
 
-export default ScrollToTop;
+export default BlogComment
