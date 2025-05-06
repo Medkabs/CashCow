@@ -23,8 +23,8 @@ const Breadcrumb = ({ title }: any) => {
             </div>
          </div>
          <div className="breadcrumb-shape-wrap">
-            <Image src={breadcrumbShape_1} alt="" className="alltuchtopdown" id="bread" />
-            <Image src={breadcrumbShape_2} alt="" className="rotateme" />
+            <Image src={breadcrumbShape_1} alt="" className="alltuchtopdown" id="bread" unoptimized={true}/>
+            <Image src={breadcrumbShape_2} alt="" className="rotateme" unoptimized={true}/>
          </div>
       </section>
    )
